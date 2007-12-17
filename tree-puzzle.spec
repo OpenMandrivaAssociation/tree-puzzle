@@ -11,7 +11,6 @@ Group:		Sciences/Biology
 License:	GPL
 URL:		http://www.tree-puzzle.de
 Source:		http://www.tree-puzzle.de/%{name}-%{version}.tar.bz2
-BuildRoot:	%{_tmppath}/%{name}-%{version}
 
 %description
 TREE-PUZZLE is a computer program to reconstruct phylogenetic trees 

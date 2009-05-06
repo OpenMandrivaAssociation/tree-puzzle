@@ -1,6 +1,6 @@
 %define name	tree-puzzle
 %define version 5.2
-%define rel	3
+%define rel	4
 %define release %mkrel %{rel}
 
 Name:		%{name}

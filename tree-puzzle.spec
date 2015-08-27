@@ -1,17 +1,11 @@
-%define name	tree-puzzle
-%define version 5.2
-%define rel	6
-%define release %mkrel %{rel}
-
-Name:		%{name}
-Version:	%{version}
-Release:	%{release}
+Name:		tree-puzzle
+Version:	5.2
+Release:	6
 Summary:	Maximum likelihood analysis for nucleotide, amino acid and two-state data
 Group:		Sciences/Biology
 License:	GPL
 URL:		http://www.tree-puzzle.de
 Source:		http://www.tree-puzzle.de/%{name}-%{version}.tar.bz2
-BuildRoot:	%{_tmppath}/%{name}-%{version}
 
 %description
 TREE-PUZZLE is a computer program to reconstruct phylogenetic trees 
@@ -33,14 +27,11 @@ of a sequence alignment.
 %make 
 
 %install
-rm -rf %{buildroot}
 %makeinstall_std
 
 %clean
-rm -rf %{buildroot}
 
 %files
-%defattr(-,root,root)
 %{_bindir}/*
 %doc AUTHORS COPYING ChangeLog README
 %doc doc/tree-puzzle.pdf
@@ -51,40 +42,4 @@ rm -rf %{buildroot}
 
 
 
-
-%changelog
-* Wed Dec 08 2010 Oden Eriksson <oeriksson@mandriva.com> 5.2-6mdv2011.0
-+ Revision: 615238
-- the mass rebuild of 2010.1 packages
-
-* Mon Mar 15 2010 Eric Fernandez <zeb@mandriva.org> 5.2-5mdv2010.1
-+ Revision: 519809
-- bump release version and rebuild
-
-* Wed May 06 2009 Eric Fernandez <zeb@mandriva.org> 5.2-4mdv2010.0
-+ Revision: 372573
-- rebuild
-
-* Wed Jan 02 2008 Olivier Blin <oblin@mandriva.com> 5.2-3mdv2009.0
-+ Revision: 140921
-- restore BuildRoot
-
-  + Thierry Vignaud <tv@mandriva.org>
-    - kill re-definition of %%buildroot on Pixel's request
-
-
-* Tue Dec 19 2006 Eric Fernandez <zeb@mandriva.org> 5.2-3mdv2007.0
-+ Revision: 100252
-- Import tree-puzzle
-
-* Mon Jun 26 2006 Eric Fernandez <zeb@zebulon.org.uk> 5.2-3mdv2007.0
-- rebuild
-- use mkrel
-
-* Wed Nov 02 2005 Guillaume Rousse <guillomovitch@mandriva.org> 5.2-2mdk
-- %%mkrel 
-- spec cleanup
-
-* Sat Oct 02 2004 Guillaume Rousse <guillomovitch@mandrake.org> 5.2-1mdk 
-- first mdk release with a spec stolen from Luc Ducazu <luc@biolinux.org>
 

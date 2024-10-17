@@ -4,7 +4,7 @@ Release:	6
 Summary:	Maximum likelihood analysis for nucleotide, amino acid and two-state data
 Group:		Sciences/Biology
 License:	GPL
-URL:		http://www.tree-puzzle.de
+URL:		https://www.tree-puzzle.de
 Source:		http://www.tree-puzzle.de/%{name}-%{version}.tar.bz2
 
 %description

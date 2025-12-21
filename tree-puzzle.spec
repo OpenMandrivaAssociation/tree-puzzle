@@ -7,6 +7,11 @@ License:	GPL
 URL:		https://www.tree-puzzle.de
 Source:		http://www.tree-puzzle.de/%{name}-%{version}.tar.bz2
 
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 %description
 TREE-PUZZLE is a computer program to reconstruct phylogenetic trees 
 from molecular sequence data by maximum likelihood. It implements a 
